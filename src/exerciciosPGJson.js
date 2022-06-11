@@ -86,3 +86,43 @@ function fimDeSemana(dia){
 }
 
 fimDeSemana(dia)
+
+//Exercicio II
+
+// O objetivo deste exercício é imprimir no console um texto que
+// varia de acordo com o dia que contém na variável dia. Para isso,
+// já apresentamos um código feito com if / else que você precisará
+// modificá-lo para testar as diferentes mensagem.
+
+let diaSemana = 'segunda-feira'
+
+function fimDeSemana1(diaSemana) {
+    switch(diaSemana){
+		case 'sexta-feira':
+			console.log('Bom fim de semana!');
+		break;
+
+		case 'segunda-feira':
+			console.log('Boa semana!');
+		break;
+
+        default: 
+            console.log('Bom dia!');
+        break;
+    }
+}
+
+fimDeSemana1(diaSemana)
+
+//Ciclo For
+
+// Vamos programar uma função que se comporte como um papagaio. Sim, Tudo o que "ouve", repete!
+// A função se chama papagaio e deve receber como parâmetro um texto e repetir 5 vezes no console.
+
+let frase = 'Olá'
+
+const papagaio = (frase) => {
+    for(let i = 0; i <= 4; i++){
+        console.log(frase)
+    }
+}
